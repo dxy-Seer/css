@@ -84,3 +84,34 @@
     background-color: hsla(var(--primary-text-color), .1);
     border-color: hsla(var(--primary-text-color), .2);
 }
+    .centerText {
+    text-align: center;
+}
+
+.capsText {
+    text-transform: uppercase;
+}
+
+.boldText {
+    font-weight: bold;
+}
+
+.lightText {
+    opacity: .75;
+}
+
+.smallText {
+    font-size: .8em;
+}
+
+.smallPadding {
+    padding: .25em;
+}
+
+.mediumPadding {
+    padding: 5px;
+}
+
+.bigPadding {
+    padding: 10px;
+}
