@@ -1,0 +1,86 @@
+.roundedButton {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: hsla(var(--primary-text-color), .8);
+    background-color: hsla(var(--primary-text-color), .2);
+    border: 1px solid transparent;
+    border-color: hsla(var(--primary-text-color), .2);
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+    user-select: none;
+    text-decoration: none;
+    opacity: 1;
+}
+
+.roundedButton>svg, .roundedButton>img {
+    width: 1em;
+    height: 1em;
+    object-fit: contain;
+    margin-right: 10px;
+    transform: scale(1.25);
+}
+
+.roundedButton.bold {
+    font-weight: bold;
+}
+
+.roundedButton.big {
+    font-size: 1.15em;
+}
+
+.roundedButton.caps {
+    text-transform: uppercase;
+}
+
+.roundedButton:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.roundedButton.accentColor1 {
+    border-color: hsl(var(--primary-accent-color-bright));
+    background-color: hsl(var(--primary-accent-color));
+    color: hsl(var(--primary-text-color));
+}
+
+.roundedButton.accentColor1:hover {
+    background-color: hsl(var(--primary-accent-color-bright));
+    color: hsl(var(--primary-text-color));
+}
+
+.roundedButton.accentColor2 {
+    border-color: hsl(var(--secondary-accent-color-bright));
+    background-color: hsl(var(--secondary-accent-color));
+    color: hsl(var(--primary-text-color));
+}
+
+.roundedButton.accentColor2:hover {
+    background-color: hsl(var(--secondary-accent-color-bright));
+    color: hsl(var(--primary-text-color));
+}
+
+.roundedButton.accentColor3 {
+    border-color: hsl(var(--additional-accent-color-bright));
+    background-color: hsl(var(--additional-accent-color));
+    color: hsl(var(--primary-text-color));
+}
+
+.roundedButton.accentColor3:hover {
+    background-color: hsl(var(--additional-accent-color-bright));
+    color: hsl(var(--primary-text-color));
+}
+
+.roundedButton.invertTextColor, .roundedButton.invertTextColor:hover {
+    color: hsl(var(--secondary-text-color));
+}
+
+.roundedButton.disabled, .roundedButton.roundedButton.disabled:hover {
+    cursor: not-allowed;
+    color: hsla(var(--primary-text-color), .6);
+    background-color: hsla(var(--primary-text-color), .1);
+    border-color: hsla(var(--primary-text-color), .2);
+}
